@@ -1,3 +1,10 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Prompt', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -34,5 +41,45 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+h1, h2, h3, p{
+  color: #fff;
+  text-shadow: 5px 4px #282c34;
+}
+
+.button-div{
+  margin-top: 10px;
+}
+
+.button{
+  padding: 5px;
+  border: black solid 4px;
+  border-radius: 30px;
+  font-size: 30px;
+  animation-name: appear;
+  animation-duration: 2s;
+}
+
+.button:hover{
+  padding: 10px;
+}
+
+.recommendation{
+  animation-name: appear;
+  animation-duration: 2s;
+}
+
+.recommendation:hover{
+  width: 20%;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
   }
 }
